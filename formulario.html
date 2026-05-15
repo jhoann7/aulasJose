@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário em HTML</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+
+    <form action="#" method="post">
+        <!-- Campo Nome -->
+        <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required>
+        </p>
+
+        <!-- Campo E-mail -->
+        <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+
+        <!-- Campo Senha -->
+        <p>
+            <label for="senha">Senha:</label><br>
+            <input type="password" id="senha" name="senha" required>
+        </p>
+
+        <!-- Campo Data -->
+        <p>
+            <label for="data">Data de Nascimento:</label><br>
+            <input type="date" id="data" name="data">
+        </p>
+
+        <!-- Select com três opções -->
+        <p>
+            <label for="curso">Curso Favorito:</label><br>
+            <select id="curso" name="curso">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+            </select>
+        </p>
+
+        <!-- Radio buttons -->
+        <p>
+            Gênero:<br>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label><br>
+
+            <input type="radio" id="outro" name="genero" value="outro">
+            <label for="outro">Outro</label>
+        </p>
+
+        <!-- Checkboxes -->
+        <p>
+            Interesses:<br>
+            <input type="checkbox" id="html" name="interesses" value="html">
+            <label for="html">HTML</label><br>
+
+            <input type="checkbox" id="css" name="interesses" value="css">
+            <label for="css">CSS</label><br>
+
+            <input type="checkbox" id="js" name="interesses" value="javascript">
+            <label for="js">JavaScript</label>
+        </p>
+
+        <!-- Botão de envio -->
+        <p>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>
